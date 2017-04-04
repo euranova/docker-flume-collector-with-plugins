@@ -10,4 +10,4 @@ cd /opt/apache-flume-bin/
     -c conf \
     -f /collector.conf \
     --name $FLUME_AGENT \
-    -Dflume.root.logger=${ROOT_LOGGER_LEVEL:-INFO},console
+    -Dflume.root.logger=${ROOT_LOGGER_LEVEL:-INFO},console $@
