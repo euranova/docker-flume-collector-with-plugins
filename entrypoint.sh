@@ -5,6 +5,7 @@ for f in /plugins/*.tar.gz; do
   tar -xf $f
 done
 
+cd /opt/apache-flume-bin/
 /opt/apache-flume-bin/bin/flume-ng agent \
     -c conf \
     -f /collector.conf \
