@@ -9,4 +9,4 @@ done
     -c conf \
     -f /collector.conf \
     --name $FLUME_AGENT \
-    -Dflume.root.logger=INFO,console
+    -Dflume.root.logger=${ROOT_LOGGER_LEVEL:-INFO},console

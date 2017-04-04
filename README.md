@@ -11,6 +11,7 @@
  image: euranova/flume-collector-with-plugins:1.7.0
  environment:
    FLUME_AGENT: my-flume-collector
+   ROOT_LOGGER_LEVEL: INFO
  ports:
  - localhost:44444:44444
  volumes:
